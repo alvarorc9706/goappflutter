@@ -89,7 +89,7 @@ class DriverTravelRequestController {
 
       }
       else{
-        utils.Snackbar.showSnackbar(context, key, 'El usuario se registro correctamente');
+        utils.Snackbar.showSnackbar(context, key, 'otro conductor ya acepto el viaje');
         print('El usuario se registro correctamente');
         _timer?.cancel();
         Navigator.pushNamedAndRemoveUntil(context, 'driver/map', (route) => false);
